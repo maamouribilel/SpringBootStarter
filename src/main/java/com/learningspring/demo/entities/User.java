@@ -35,6 +35,8 @@ public class User extends RepresentationModel {
     private String ssn;
     @OneToMany(mappedBy = "user")
     private List<Order> orders;
+    @Column(name = "ADDRESS")
+    private String address;
 
     public User() {
     }

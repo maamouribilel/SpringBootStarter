@@ -36,6 +36,7 @@ public class UserController {
     // create user method
     @PostMapping("")
     @CrossOrigin(origins = "*")
+
     public User createUser(@Valid @RequestBody User user, UriComponentsBuilder builder) {
         try {
             return this.userService.createUser(user);

@@ -8,6 +8,7 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver;
 
+
 import java.util.Locale;
 
 @SpringBootApplication
@@ -40,5 +41,6 @@ public class DemoApplication {
         bean.setValidationMessageSource(messageSource());
         return bean;
     }
+
 
 }
